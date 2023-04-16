@@ -1,4 +1,4 @@
-## Hello People eu sou a José Gabriel Pereira!!!
+## Hello People eu sou o José Gabriel Pereira!!!
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=josegabrielpereira&show_icons=true&theme=onedark)
 
