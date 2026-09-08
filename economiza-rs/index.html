@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Economiza RS — Compare preços e economize</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="logo">🛒</div>
+      <div class="hero-text">
+        <h1>Economiza RS</h1>
+        <p>Compare preços e economize de verdade.</p>
+        <span class="badge">🇧🇷 Feito para o Rio Grande do Sul</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="content">
+      <div class="card">
+        <h2>🔍 Encontrar produto</h2>
+        <div class="search-row">
+          <input type="text" id="search-input" placeholder="Ex.: arroz, leite, café..." />
+          <button id="clear-btn" class="btn btn-primary">Limpar</button>
+        </div>
+        <div class="filter-row">
+          <select id="market-filter">
+            <option value="all">Todos os mercados</option>
+          </select>
+          <select id="sort-select">
+            <option value="name">Ordenar por produto</option>
+            <option value="cheapest">Ordenar por menor preço</option>
+            <option value="expensive">Ordenar por maior preço</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>📊 Comparação de preços</h2>
+        <div id="products-list" class="products-list"></div>
+        <p id="empty-state" class="empty-state" hidden>Nenhum produto encontrado.</p>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <div class="card">
+        <h2>🏪 Mercados</h2>
+        <ul id="markets-list" class="markets-list"></ul>
+      </div>
+
+      <div class="card">
+        <h2>📝 Minha lista</h2>
+        <div class="search-row">
+          <input type="text" id="list-input" placeholder="Adicionar produto" />
+          <button id="add-item-btn" class="btn btn-primary">Adicionar</button>
+        </div>
+        <p id="list-empty" class="empty-state">Sua lista está vazia.</p>
+        <ul id="my-list" class="my-list"></ul>
+        <p class="total">Total estimado: <strong id="list-total">R$ 0,00</strong></p>
+        <button id="clear-list-btn" class="btn btn-secondary">Limpar lista</button>
+        <p class="disclaimer">Preços desta versão são demonstrativos. Depois podemos conectar preços reais por cidade/filial.</p>
+      </div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
